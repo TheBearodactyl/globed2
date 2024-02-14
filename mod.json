@@ -18,9 +18,7 @@
     "name": "Globed",
     "developer": "dankmeme",
     "description": "Feature-rich multiplayer mod for Geometry Dash",
-    "dependencies": [
-       {}
-    ],
+    "dependencies": [],
     "incompatibilities": [
         {
             "id": "thesillydoggo.moretags",
