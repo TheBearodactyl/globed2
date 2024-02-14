@@ -19,11 +19,7 @@
     "developer": "dankmeme",
     "description": "Feature-rich multiplayer mod for Geometry Dash",
     "dependencies": [
-        {
-            "id": "geode.custom-keybinds",
-            "version": ">=v1.2.3",
-            "required": false
-        }
+       {}
     ],
     "incompatibilities": [
         {
