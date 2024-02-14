@@ -1,10 +1,8 @@
 #include <defs.hpp>
 
-/*
 #if GLOBED_HAS_KEYBINDS
 #include <geode.custom-keybinds/include/Keybinds.hpp>
 #endif
-    */
 
 #include <Geode/cocos/platform/IncludeCurl.h>
 
@@ -18,7 +16,7 @@ using namespace geode::prelude;
 
 void setupLibsodium();
 void setupErrorCheckNode();
-// void setupCustomKeybinds();
+void setupCustomKeybinds();
 void printDebugInfo();
 
 static void FMODSystemInitHook(FMOD::System* system, int channels, FMOD_INITFLAGS flags, void* dd) {
@@ -40,7 +38,7 @@ $on_mod(Loaded) {
 
     setupLibsodium();
     setupErrorCheckNode();
-    // setupCustomKeybinds();
+    setupCustomKeybinds();
 
 #if GLOBED_VOICE_SUPPORT
     GlobedAudioManager::get().preInitialize();
@@ -69,7 +67,6 @@ void setupErrorCheckNode() {
     SceneManager::get()->keepAcrossScenes(ecn);
 }
 
-/*
 void setupCustomKeybinds() {
 #if GLOBED_HAS_KEYBINDS
     using namespace keybinds;
@@ -92,7 +89,6 @@ void setupCustomKeybinds() {
 
 #endif // GLOBED_HAS_KEYBINDS
 }
-*/
 
 // just debug printing
 void printDebugInfo() {
